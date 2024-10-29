@@ -1,4 +1,4 @@
-module github.com/sudolab/core-geth
+module github.com/shudolab/core-geth
 
 go 1.21
 
