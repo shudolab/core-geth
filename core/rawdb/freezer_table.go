@@ -27,9 +27,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/metrics"
 	"github.com/golang/snappy"
 )
 

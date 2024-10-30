@@ -21,9 +21,9 @@ import (
 	"errors"
 	"os"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core/rawdb"
+	"github.com/shudolab/core-geth/log"
 	bloomfilter "github.com/holiman/bloomfilter/v2"
 )
 

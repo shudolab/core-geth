@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core/rawdb"
 )
 
 func TestIteratorHold(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
+	"github.com/shudolab/core-geth/params/types/ctypes"
 )
 
 func TestChainConfig_converting(t *testing.T) {

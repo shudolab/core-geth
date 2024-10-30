@@ -23,10 +23,10 @@ import (
 	"hash/crc32"
 	"math"
 
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params/confp"
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/params/confp"
+	"github.com/shudolab/core-geth/params/types/ctypes"
 )
 
 var (

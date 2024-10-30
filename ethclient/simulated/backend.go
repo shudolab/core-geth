@@ -19,19 +19,19 @@ package simulated
 import (
 	"time"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/eth/catalyst"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/eth/filters"
-	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/params/types/genesisT"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/shudolab/core-geth"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/eth"
+	"github.com/shudolab/core-geth/eth/catalyst"
+	"github.com/shudolab/core-geth/eth/downloader"
+	"github.com/shudolab/core-geth/eth/ethconfig"
+	"github.com/shudolab/core-geth/eth/filters"
+	"github.com/shudolab/core-geth/ethclient"
+	"github.com/shudolab/core-geth/node"
+	"github.com/shudolab/core-geth/p2p"
+	"github.com/shudolab/core-geth/params"
+	"github.com/shudolab/core-geth/params/types/genesisT"
+	"github.com/shudolab/core-geth/rpc"
 )
 
 // Client exposes the methods provided by the Ethereum RPC client.

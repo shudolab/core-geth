@@ -24,9 +24,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/shudolab/core-geth/event"
+	"github.com/shudolab/core-geth/p2p/enode"
+	"github.com/shudolab/core-geth/rlp"
 )
 
 // Msg defines the structure of a p2p message.

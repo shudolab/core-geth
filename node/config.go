@@ -25,13 +25,13 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/params/vars"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/crypto"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/p2p"
+	"github.com/shudolab/core-geth/params"
+	"github.com/shudolab/core-geth/params/vars"
+	"github.com/shudolab/core-geth/rpc"
 )
 
 const (

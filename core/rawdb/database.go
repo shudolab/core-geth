@@ -26,12 +26,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/ethdb/leveldb"
-	"github.com/ethereum/go-ethereum/ethdb/memorydb"
-	"github.com/ethereum/go-ethereum/ethdb/pebble"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/ethdb"
+	"github.com/shudolab/core-geth/ethdb/leveldb"
+	"github.com/shudolab/core-geth/ethdb/memorydb"
+	"github.com/shudolab/core-geth/ethdb/pebble"
+	"github.com/shudolab/core-geth/log"
 	"github.com/olekukonko/tablewriter"
 )
 

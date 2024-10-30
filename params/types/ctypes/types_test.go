@@ -26,8 +26,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/params/vars"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/params/vars"
 	"github.com/holiman/uint256"
 )
 

@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/params/types/genesisT"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/common/hexutil"
+	"github.com/shudolab/core-geth/common/math"
+	"github.com/shudolab/core-geth/params/types/genesisT"
 )
 
 type stPre map[common.Address]stPreAccount

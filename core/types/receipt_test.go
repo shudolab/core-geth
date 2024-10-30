@@ -24,10 +24,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/params/vars"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/params"
+	"github.com/shudolab/core-geth/params/vars"
+	"github.com/shudolab/core-geth/rlp"
 	"github.com/holiman/uint256"
 	"github.com/kylelemons/godebug/diff"
 )

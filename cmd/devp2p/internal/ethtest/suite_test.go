@@ -24,17 +24,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/eth/catalyst"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/internal/utesting"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
-	"github.com/ethereum/go-ethereum/params/vars"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/common/hexutil"
+	"github.com/shudolab/core-geth/consensus/ethash"
+	"github.com/shudolab/core-geth/eth"
+	"github.com/shudolab/core-geth/eth/catalyst"
+	"github.com/shudolab/core-geth/eth/ethconfig"
+	"github.com/shudolab/core-geth/internal/utesting"
+	"github.com/shudolab/core-geth/node"
+	"github.com/shudolab/core-geth/p2p"
+	"github.com/shudolab/core-geth/params/types/ctypes"
+	"github.com/shudolab/core-geth/params/vars"
 )
 
 func makeJWTSecret() (string, [32]byte, error) {

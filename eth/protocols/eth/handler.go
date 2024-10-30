@@ -21,14 +21,14 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/metrics"
+	"github.com/shudolab/core-geth/p2p"
+	"github.com/shudolab/core-geth/p2p/enode"
+	"github.com/shudolab/core-geth/p2p/enr"
+	"github.com/shudolab/core-geth/params/types/ctypes"
 )
 
 const (

@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/crypto"
+	"github.com/shudolab/core-geth/params/types/ctypes"
 )
 
 var ErrInvalidChainId = errors.New("invalid chain id for signer")

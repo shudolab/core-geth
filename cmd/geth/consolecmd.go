@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/console"
-	"github.com/ethereum/go-ethereum/internal/flags"
+	"github.com/shudolab/core-geth/cmd/utils"
+	"github.com/shudolab/core-geth/console"
+	"github.com/shudolab/core-geth/internal/flags"
 	"github.com/urfave/cli/v2"
 )
 

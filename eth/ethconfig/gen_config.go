@@ -5,15 +5,15 @@ package ethconfig
 import (
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core/txpool/blobpool"
-	"github.com/ethereum/go-ethereum/core/txpool/legacypool"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/gasprice"
-	"github.com/ethereum/go-ethereum/miner"
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
-	"github.com/ethereum/go-ethereum/params/types/genesisT"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/consensus/ethash"
+	"github.com/shudolab/core-geth/core/txpool/blobpool"
+	"github.com/shudolab/core-geth/core/txpool/legacypool"
+	"github.com/shudolab/core-geth/eth/downloader"
+	"github.com/shudolab/core-geth/eth/gasprice"
+	"github.com/shudolab/core-geth/miner"
+	"github.com/shudolab/core-geth/params/types/ctypes"
+	"github.com/shudolab/core-geth/params/types/genesisT"
 )
 
 // MarshalTOML marshals as TOML.

@@ -17,9 +17,9 @@
 package params
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/params/types/genesisT"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/common/hexutil"
+	"github.com/shudolab/core-geth/params/types/genesisT"
 )
 
 var MordorGenesisHash = common.HexToHash("0xa68ebde7932eccb177d38d55dcc6461a019dd795a681e59b5a3e4f3a7259a3f1")

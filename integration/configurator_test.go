@@ -21,12 +21,12 @@ import (
 	"log"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/params/confp"
-	"github.com/ethereum/go-ethereum/params/types/coregeth"
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
-	"github.com/ethereum/go-ethereum/params/vars"
-	"github.com/ethereum/go-ethereum/tests"
+	"github.com/shudolab/core-geth/common/math"
+	"github.com/shudolab/core-geth/params/confp"
+	"github.com/shudolab/core-geth/params/types/coregeth"
+	"github.com/shudolab/core-geth/params/types/ctypes"
+	"github.com/shudolab/core-geth/params/vars"
+	"github.com/shudolab/core-geth/tests"
 )
 
 func TestConstantinopleEquivalence(t *testing.T) {

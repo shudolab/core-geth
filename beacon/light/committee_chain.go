@@ -23,14 +23,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/beacon/params"
-	"github.com/ethereum/go-ethereum/beacon/types"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/lru"
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/shudolab/core-geth/beacon/params"
+	"github.com/shudolab/core-geth/beacon/types"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/common/lru"
+	"github.com/shudolab/core-geth/common/mclock"
+	"github.com/shudolab/core-geth/core/rawdb"
+	"github.com/shudolab/core-geth/ethdb"
+	"github.com/shudolab/core-geth/log"
 )
 
 var (

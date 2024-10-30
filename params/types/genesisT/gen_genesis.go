@@ -7,13 +7,13 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/params/confp/generic"
-	"github.com/ethereum/go-ethereum/params/types/coregeth"
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
-	"github.com/ethereum/go-ethereum/params/types/goethereum"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/common/hexutil"
+	"github.com/shudolab/core-geth/common/math"
+	"github.com/shudolab/core-geth/params/confp/generic"
+	"github.com/shudolab/core-geth/params/types/coregeth"
+	"github.com/shudolab/core-geth/params/types/ctypes"
+	"github.com/shudolab/core-geth/params/types/goethereum"
 )
 
 var _ = (*genesisSpecMarshaling)(nil)

@@ -33,9 +33,9 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/params/types/genesisT"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/params/types/genesisT"
+	"github.com/shudolab/core-geth/rlp"
 	"golang.org/x/exp/slices"
 )
 

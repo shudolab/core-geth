@@ -21,10 +21,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/shudolab/core-geth"
+	"github.com/shudolab/core-geth/core"
+	"github.com/shudolab/core-geth/event"
+	"github.com/shudolab/core-geth/rpc"
 )
 
 // DownloaderAPI provides an API which gives information about the current

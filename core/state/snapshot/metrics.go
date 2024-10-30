@@ -16,7 +16,7 @@
 
 package snapshot
 
-import "github.com/ethereum/go-ethereum/metrics"
+import "github.com/shudolab/core-geth/metrics"
 
 // Metrics in generation
 var (

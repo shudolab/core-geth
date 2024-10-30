@@ -22,11 +22,11 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/ethdb/memorydb"
-	"github.com/ethereum/go-ethereum/trie"
-	"github.com/ethereum/go-ethereum/triedb"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core/rawdb"
+	"github.com/shudolab/core-geth/ethdb/memorydb"
+	"github.com/shudolab/core-geth/trie"
+	"github.com/shudolab/core-geth/triedb"
 	"golang.org/x/exp/slices"
 )
 

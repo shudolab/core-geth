@@ -27,9 +27,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/internal/testlog"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/internal/testlog"
 	"golang.org/x/exp/slog"
 )
 

@@ -21,12 +21,12 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	cmath "github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto/kzg4844"
-	"github.com/ethereum/go-ethereum/params/vars"
+	"github.com/shudolab/core-geth/common"
+	cmath "github.com/shudolab/core-geth/common/math"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/core/vm"
+	"github.com/shudolab/core-geth/crypto/kzg4844"
+	"github.com/shudolab/core-geth/params/vars"
 	"github.com/holiman/uint256"
 )
 

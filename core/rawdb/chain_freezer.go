@@ -22,10 +22,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params/vars"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/ethdb"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/params/vars"
 )
 
 const (

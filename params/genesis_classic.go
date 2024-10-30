@@ -19,8 +19,8 @@ package params
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/params/types/genesisT"
+	"github.com/shudolab/core-geth/common/hexutil"
+	"github.com/shudolab/core-geth/params/types/genesisT"
 )
 
 // ClassicGenesisBlock returns the Ethereum Classic genesis block.

@@ -22,8 +22,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ethereum/go-ethereum/cmd/ancient-store-mem/lib"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/shudolab/core-geth/cmd/ancient-store-mem/lib"
+	"github.com/shudolab/core-geth/rpc"
 	"github.com/spf13/cobra"
 )
 

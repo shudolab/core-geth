@@ -19,9 +19,9 @@ package misc
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/params/types/ctypes"
 )
 
 // VerifyForkHashes verifies that blocks conforming to network hard-forks do have

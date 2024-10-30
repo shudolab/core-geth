@@ -23,22 +23,22 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/asm"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/eth/tracers"
-	"github.com/ethereum/go-ethereum/eth/tracers/logger"
+	"github.com/shudolab/core-geth/accounts/abi"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/consensus"
+	"github.com/shudolab/core-geth/core"
+	"github.com/shudolab/core-geth/core/asm"
+	"github.com/shudolab/core-geth/core/rawdb"
+	"github.com/shudolab/core-geth/core/state"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/core/vm"
+	"github.com/shudolab/core-geth/eth/tracers"
+	"github.com/shudolab/core-geth/eth/tracers/logger"
 
-	"github.com/ethereum/go-ethereum/params/types/goethereum"
+	"github.com/shudolab/core-geth/params/types/goethereum"
 
 	// force-load js tracers to trigger registration
-	_ "github.com/ethereum/go-ethereum/eth/tracers/js"
+	_ "github.com/shudolab/core-geth/eth/tracers/js"
 	"github.com/holiman/uint256"
 )
 
@@ -600,7 +600,7 @@ func TestEip2929Cases(t *testing.T) {
 
 // TestColdAccountAccessCost test that the cold account access cost is reported
 // correctly
-// see: https://github.com/ethereum/go-ethereum/issues/22649
+// see: https://github.com/shudolab/core-geth/issues/22649
 func TestColdAccountAccessCost(t *testing.T) {
 	for i, tc := range []struct {
 		code []byte

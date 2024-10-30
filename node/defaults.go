@@ -17,10 +17,10 @@
 package node
 
 import (
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/nat"
-	"github.com/ethereum/go-ethereum/params/vars"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/shudolab/core-geth/p2p"
+	"github.com/shudolab/core-geth/p2p/nat"
+	"github.com/shudolab/core-geth/params/vars"
+	"github.com/shudolab/core-geth/rpc"
 )
 
 const (

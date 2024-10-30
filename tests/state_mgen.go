@@ -17,9 +17,9 @@
 package tests
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/vm"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core/rawdb"
+	"github.com/shudolab/core-geth/core/vm"
 )
 
 // RunSetPost runs the state subtest for a given config, and writes the resulting

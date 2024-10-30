@@ -26,11 +26,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params/types/goethereum"
-	"github.com/ethereum/go-ethereum/params/vars"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/common/math"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/params/types/goethereum"
+	"github.com/shudolab/core-geth/params/vars"
 )
 
 type diffTest struct {

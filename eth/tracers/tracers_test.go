@@ -20,16 +20,16 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/eth/tracers/logger"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/params/types/genesisT"
-	"github.com/ethereum/go-ethereum/tests"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core"
+	"github.com/shudolab/core-geth/core/rawdb"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/core/vm"
+	"github.com/shudolab/core-geth/crypto"
+	"github.com/shudolab/core-geth/eth/tracers/logger"
+	"github.com/shudolab/core-geth/params"
+	"github.com/shudolab/core-geth/params/types/genesisT"
+	"github.com/shudolab/core-geth/tests"
 )
 
 func BenchmarkTransactionTrace(b *testing.B) {

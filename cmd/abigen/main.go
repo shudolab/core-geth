@@ -24,12 +24,12 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/common/compiler"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/internal/flags"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/shudolab/core-geth/accounts/abi/bind"
+	"github.com/shudolab/core-geth/cmd/utils"
+	"github.com/shudolab/core-geth/common/compiler"
+	"github.com/shudolab/core-geth/crypto"
+	"github.com/shudolab/core-geth/internal/flags"
+	"github.com/shudolab/core-geth/log"
 	"github.com/urfave/cli/v2"
 )
 

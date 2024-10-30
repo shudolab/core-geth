@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
-	"github.com/ethereum/go-ethereum/params/types/genesisT"
+	"github.com/shudolab/core-geth/params/types/ctypes"
+	"github.com/shudolab/core-geth/params/types/genesisT"
 	"gopkg.in/urfave/cli.v1"
 )
 

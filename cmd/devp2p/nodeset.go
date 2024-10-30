@@ -23,8 +23,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/p2p/enode"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/p2p/enode"
 	"golang.org/x/exp/slices"
 )
 

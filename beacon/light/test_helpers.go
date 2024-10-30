@@ -21,10 +21,10 @@ import (
 	"crypto/sha256"
 	mrand "math/rand"
 
-	"github.com/ethereum/go-ethereum/beacon/merkle"
-	"github.com/ethereum/go-ethereum/beacon/params"
-	"github.com/ethereum/go-ethereum/beacon/types"
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/shudolab/core-geth/beacon/merkle"
+	"github.com/shudolab/core-geth/beacon/params"
+	"github.com/shudolab/core-geth/beacon/types"
+	"github.com/shudolab/core-geth/common"
 )
 
 func GenerateTestCommittee() *types.SerializedSyncCommittee {

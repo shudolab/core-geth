@@ -7,17 +7,17 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/consensus/beacon"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/params/types/genesisT"
-	"github.com/ethereum/go-ethereum/params/vars"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/common/hexutil"
+	"github.com/shudolab/core-geth/consensus/beacon"
+	"github.com/shudolab/core-geth/consensus/ethash"
+	"github.com/shudolab/core-geth/core"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/core/vm"
+	"github.com/shudolab/core-geth/params"
+	"github.com/shudolab/core-geth/params/types/genesisT"
+	"github.com/shudolab/core-geth/params/vars"
+	"github.com/shudolab/core-geth/rpc"
 )
 
 func TestCall_CG(t *testing.T) {

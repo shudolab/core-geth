@@ -17,11 +17,11 @@
 package trie
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/trie/trienode"
-	"github.com/ethereum/go-ethereum/triedb/database"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/rlp"
+	"github.com/shudolab/core-geth/trie/trienode"
+	"github.com/shudolab/core-geth/triedb/database"
 )
 
 // SecureTrie is the old name of StateTrie.

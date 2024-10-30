@@ -19,9 +19,9 @@ package vm
 import (
 	"errors"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/params/vars"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/common/math"
+	"github.com/shudolab/core-geth/params/vars"
 )
 
 // memoryGasCost calculates the quadratic gas for memory expansion. It does so

@@ -19,8 +19,8 @@ package types
 import (
 	"bytes"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/rlp"
 	"github.com/holiman/uint256"
 )
 

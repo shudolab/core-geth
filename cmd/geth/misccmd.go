@@ -23,10 +23,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/internal/version"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/shudolab/core-geth/cmd/utils"
+	"github.com/shudolab/core-geth/consensus/ethash"
+	"github.com/shudolab/core-geth/internal/version"
+	"github.com/shudolab/core-geth/params"
 	"github.com/urfave/cli/v2"
 )
 

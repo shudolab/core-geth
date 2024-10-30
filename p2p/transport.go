@@ -26,11 +26,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/bitutil"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/p2p/rlpx"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/common/bitutil"
+	"github.com/shudolab/core-geth/metrics"
+	"github.com/shudolab/core-geth/p2p/rlpx"
+	"github.com/shudolab/core-geth/rlp"
 )
 
 const (

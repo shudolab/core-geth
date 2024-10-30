@@ -20,17 +20,17 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/state/snapshot"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/triedb"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/consensus"
+	"github.com/shudolab/core-geth/core/rawdb"
+	"github.com/shudolab/core-geth/core/state"
+	"github.com/shudolab/core-geth/core/state/snapshot"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/core/vm"
+	"github.com/shudolab/core-geth/event"
+	"github.com/shudolab/core-geth/params/types/ctypes"
+	"github.com/shudolab/core-geth/rlp"
+	"github.com/shudolab/core-geth/triedb"
 )
 
 // CurrentHeader retrieves the current head header of the canonical chain. The

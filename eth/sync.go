@@ -21,13 +21,13 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/txpool"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params/vars"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core/rawdb"
+	"github.com/shudolab/core-geth/core/txpool"
+	"github.com/shudolab/core-geth/eth/downloader"
+	"github.com/shudolab/core-geth/eth/protocols/eth"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/params/vars"
 )
 
 const (

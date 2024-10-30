@@ -21,11 +21,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/shudolab/core-geth/accounts"
+	"github.com/shudolab/core-geth/accounts/keystore"
+	"github.com/shudolab/core-geth/cmd/utils"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/crypto"
 	"github.com/urfave/cli/v2"
 )
 

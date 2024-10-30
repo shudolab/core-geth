@@ -23,10 +23,10 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/fetcher"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/common/mclock"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/eth/fetcher"
 )
 
 var (

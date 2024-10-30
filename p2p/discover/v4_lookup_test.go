@@ -22,10 +22,10 @@ import (
 	"net/netip"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/p2p/discover/v4wire"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
+	"github.com/shudolab/core-geth/crypto"
+	"github.com/shudolab/core-geth/p2p/discover/v4wire"
+	"github.com/shudolab/core-geth/p2p/enode"
+	"github.com/shudolab/core-geth/p2p/enr"
 	"golang.org/x/exp/slices"
 )
 

@@ -21,10 +21,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/params/confp/generic"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core/rawdb"
+	"github.com/shudolab/core-geth/params"
+	"github.com/shudolab/core-geth/params/confp/generic"
 )
 
 // Genesis block for nodes which actively oppose the DAO fork

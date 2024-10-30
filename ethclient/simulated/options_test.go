@@ -22,10 +22,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/params/types/genesisT"
-	"github.com/ethereum/go-ethereum/params/vars"
+	"github.com/shudolab/core-geth"
+	"github.com/shudolab/core-geth/core"
+	"github.com/shudolab/core-geth/params/types/genesisT"
+	"github.com/shudolab/core-geth/params/vars"
 )
 
 // Tests that the simulator starts with the initial gas limit in the genesis block,

@@ -29,9 +29,9 @@ import (
 
 	"golang.org/x/exp/slog"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/common/hexutil"
+	"github.com/shudolab/core-geth/core/types"
 )
 
 func verboseLogging() {
@@ -322,7 +322,7 @@ func TestTestMode(t *testing.T) {
 }
 
 // This test checks that cache lru logic doesn't crash under load.
-// It reproduces https://github.com/ethereum/go-ethereum/issues/14943
+// It reproduces https://github.com/shudolab/core-geth/issues/14943
 func TestCacheFileEvict(t *testing.T) {
 	// TODO: t.TempDir fails to remove the directory on Windows
 	// \AppData\Local\Temp\1\TestCacheFileEvict2179435125\001\cache-R23-0000000000000000: Access is denied.

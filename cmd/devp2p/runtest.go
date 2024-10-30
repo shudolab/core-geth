@@ -19,10 +19,10 @@ package main
 import (
 	"os"
 
-	"github.com/ethereum/go-ethereum/cmd/devp2p/internal/v4test"
-	"github.com/ethereum/go-ethereum/internal/flags"
-	"github.com/ethereum/go-ethereum/internal/utesting"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/shudolab/core-geth/cmd/devp2p/internal/v4test"
+	"github.com/shudolab/core-geth/internal/flags"
+	"github.com/shudolab/core-geth/internal/utesting"
+	"github.com/shudolab/core-geth/log"
 	"github.com/urfave/cli/v2"
 )
 

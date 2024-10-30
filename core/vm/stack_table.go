@@ -17,7 +17,7 @@
 package vm
 
 import (
-	"github.com/ethereum/go-ethereum/params/vars"
+	"github.com/shudolab/core-geth/params/vars"
 )
 
 func minSwapStack(n int) int {

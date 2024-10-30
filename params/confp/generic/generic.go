@@ -21,9 +21,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/params/types/coregeth"
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
-	"github.com/ethereum/go-ethereum/params/types/goethereum"
+	"github.com/shudolab/core-geth/params/types/coregeth"
+	"github.com/shudolab/core-geth/params/types/ctypes"
+	"github.com/shudolab/core-geth/params/types/goethereum"
 	"github.com/tidwall/gjson"
 )
 

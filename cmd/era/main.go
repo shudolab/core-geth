@@ -27,13 +27,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/internal/era"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/internal/flags"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/internal/era"
+	"github.com/shudolab/core-geth/internal/ethapi"
+	"github.com/shudolab/core-geth/internal/flags"
+	"github.com/shudolab/core-geth/params"
+	"github.com/shudolab/core-geth/trie"
 	"github.com/urfave/cli/v2"
 )
 

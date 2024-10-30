@@ -23,15 +23,15 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/beacon/engine"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/txpool"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/params/vars"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/shudolab/core-geth/beacon/engine"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core/txpool"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/eth"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/node"
+	"github.com/shudolab/core-geth/params/vars"
+	"github.com/shudolab/core-geth/rpc"
 )
 
 const devEpochLength = 32

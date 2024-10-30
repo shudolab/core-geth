@@ -26,15 +26,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/params/types/genesisT"
-	"github.com/ethereum/go-ethereum/params/vars"
-	"github.com/ethereum/go-ethereum/triedb"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/consensus/ethash"
+	"github.com/shudolab/core-geth/core/rawdb"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/core/vm"
+	"github.com/shudolab/core-geth/params"
+	"github.com/shudolab/core-geth/params/types/genesisT"
+	"github.com/shudolab/core-geth/params/vars"
+	"github.com/shudolab/core-geth/triedb"
 )
 
 // Tests a recovery for a short canonical chain where a recent block was already
@@ -1889,7 +1889,7 @@ func testRepairWithScheme(t *testing.T, tt *rewindTest, snapshots bool, scheme s
 	}
 }
 
-// TestIssue23496 tests scenario described in https://github.com/ethereum/go-ethereum/pull/23496#issuecomment-926393893
+// TestIssue23496 tests scenario described in https://github.com/shudolab/core-geth/pull/23496#issuecomment-926393893
 // Credits to @zzyalbert for finding the issue.
 //
 // Local chain owns these blocks:

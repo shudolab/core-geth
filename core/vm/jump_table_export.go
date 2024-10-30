@@ -20,7 +20,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
+	"github.com/shudolab/core-geth/params/types/ctypes"
 )
 
 // LookupInstructionSet returns the instruction set for the fork configured by

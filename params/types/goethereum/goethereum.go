@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/params/confp"
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/params/confp"
+	"github.com/shudolab/core-geth/params/types/ctypes"
 )
 
 type ChainConfig struct {

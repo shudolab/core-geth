@@ -18,9 +18,9 @@ package mutations
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
-	"github.com/ethereum/go-ethereum/params/vars"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/params/types/ctypes"
+	"github.com/shudolab/core-geth/params/vars"
 	"github.com/holiman/uint256"
 )
 

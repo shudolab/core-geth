@@ -21,7 +21,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/params/vars"
+	"github.com/shudolab/core-geth/params/vars"
 )
 
 func TestCalcExcessBlobGas(t *testing.T) {

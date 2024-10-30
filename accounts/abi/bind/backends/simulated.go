@@ -19,13 +19,13 @@ package backends
 import (
 	"context"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethclient/simulated"
-	"github.com/ethereum/go-ethereum/params/types/genesisT"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/ethclient/simulated"
+	"github.com/shudolab/core-geth/params/types/genesisT"
 )
 
 // SimulatedBackend is a simulated blockchain.
-// Deprecated: use package github.com/ethereum/go-ethereum/ethclient/simulated instead.
+// Deprecated: use package github.com/shudolab/core-geth/ethclient/simulated instead.
 type SimulatedBackend struct {
 	*simulated.Backend
 	simulated.Client
@@ -42,7 +42,7 @@ func (b *SimulatedBackend) Fork(ctx context.Context, parentHash common.Hash) err
 // A simulated backend always uses chainID 1337.
 //
 // Deprecated: please use simulated.Backend from package
-// github.com/ethereum/go-ethereum/ethclient/simulated instead.
+// github.com/shudolab/core-geth/ethclient/simulated instead.
 func NewSimulatedBackend(alloc genesisT.GenesisAlloc, gasLimit uint64) *SimulatedBackend {
 	b := simulated.NewBackend(alloc, simulated.WithBlockGasLimit(gasLimit))
 	return &SimulatedBackend{

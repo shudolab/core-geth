@@ -24,9 +24,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/cmd/evm/internal/t8ntool"
-	"github.com/ethereum/go-ethereum/internal/cmdtest"
-	"github.com/ethereum/go-ethereum/internal/reexec"
+	"github.com/shudolab/core-geth/cmd/evm/internal/t8ntool"
+	"github.com/shudolab/core-geth/internal/cmdtest"
+	"github.com/shudolab/core-geth/internal/reexec"
 	"github.com/go-test/deep"
 )
 

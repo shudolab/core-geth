@@ -21,12 +21,12 @@ import (
 	"time"
 
 	"github.com/VictoriaMetrics/fastcache"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/trie/trienode"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core/rawdb"
+	"github.com/shudolab/core-geth/crypto"
+	"github.com/shudolab/core-geth/ethdb"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/trie/trienode"
 )
 
 // nodebuffer is a collection of modified trie nodes to aggregate the disk

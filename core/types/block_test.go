@@ -22,13 +22,13 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/internal/blocktest"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/params/vars"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/common/math"
+	"github.com/shudolab/core-geth/crypto"
+	"github.com/shudolab/core-geth/internal/blocktest"
+	"github.com/shudolab/core-geth/params"
+	"github.com/shudolab/core-geth/params/vars"
+	"github.com/shudolab/core-geth/rlp"
 )
 
 // from bcValidBlockTest.json, "SimpleTx"

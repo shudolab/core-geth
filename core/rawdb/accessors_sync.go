@@ -17,10 +17,10 @@
 package rawdb
 
 import (
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/ethdb"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/rlp"
 )
 
 // ReadSkeletonSyncStatus retrieves the serialized sync status saved at shutdown.

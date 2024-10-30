@@ -18,7 +18,7 @@ package ethash
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
+	"github.com/shudolab/core-geth/params/types/ctypes"
 )
 
 func ecip1010Explosion(config ctypes.ChainConfigurator, next *big.Int, exPeriodRef *big.Int) {

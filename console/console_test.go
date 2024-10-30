@@ -25,15 +25,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/console/prompt"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/internal/jsre"
-	"github.com/ethereum/go-ethereum/miner"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/consensus/ethash"
+	"github.com/shudolab/core-geth/console/prompt"
+	"github.com/shudolab/core-geth/eth"
+	"github.com/shudolab/core-geth/eth/ethconfig"
+	"github.com/shudolab/core-geth/internal/jsre"
+	"github.com/shudolab/core-geth/miner"
+	"github.com/shudolab/core-geth/node"
+	"github.com/shudolab/core-geth/params"
 )
 
 const (

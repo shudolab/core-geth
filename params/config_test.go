@@ -21,18 +21,18 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/params/confp"
-	"github.com/ethereum/go-ethereum/params/types/coregeth"
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
-	"github.com/ethereum/go-ethereum/params/types/genesisT"
-	"github.com/ethereum/go-ethereum/params/types/goethereum"
-	"github.com/ethereum/go-ethereum/params/vars"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core/rawdb"
+	"github.com/shudolab/core-geth/core/state"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/ethdb"
+	"github.com/shudolab/core-geth/params/confp"
+	"github.com/shudolab/core-geth/params/types/coregeth"
+	"github.com/shudolab/core-geth/params/types/ctypes"
+	"github.com/shudolab/core-geth/params/types/genesisT"
+	"github.com/shudolab/core-geth/params/types/goethereum"
+	"github.com/shudolab/core-geth/params/vars"
+	"github.com/shudolab/core-geth/trie"
 	"github.com/holiman/uint256"
 )
 
@@ -239,7 +239,7 @@ func TestCheckCompatible(t *testing.T) {
 				return c
 			}(),
 		},
-		// https://github.com/ethereum/go-ethereum/pull/21473
+		// https://github.com/shudolab/core-geth/pull/21473
 		// This is to enable private chains running on older Geth release 1.8.27 with Constantinople fork enabled (but not Petersburg) to apply Petersburg retroactively when upgrading to Geth 1.9.
 		// ... but @meowsbits thinks this isn't reasonable.
 		// This is allowance would presume that the private chains were unaffected by the constantinople vs. petersburg

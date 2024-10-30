@@ -24,13 +24,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/shudolab/core-geth/common/mclock"
+	"github.com/shudolab/core-geth/event"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/metrics"
+	"github.com/shudolab/core-geth/p2p/enode"
+	"github.com/shudolab/core-geth/p2p/enr"
+	"github.com/shudolab/core-geth/rlp"
 	"golang.org/x/exp/slices"
 )
 

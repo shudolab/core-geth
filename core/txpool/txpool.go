@@ -22,12 +22,12 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/event"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/metrics"
 )
 
 // TxStatus is the current status of a transaction as seen by the pool.

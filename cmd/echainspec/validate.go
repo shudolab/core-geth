@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/params/confp"
+	"github.com/shudolab/core-geth/common/math"
+	"github.com/shudolab/core-geth/params/confp"
 	"gopkg.in/urfave/cli.v1"
 )
 

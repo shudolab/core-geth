@@ -19,7 +19,7 @@ package misc
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/params/vars"
+	"github.com/shudolab/core-geth/params/vars"
 )
 
 // VerifyGaslimit verifies the header gas limit according increase/decrease

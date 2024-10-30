@@ -21,10 +21,10 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/eth/tracers"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core/vm"
+	"github.com/shudolab/core-geth/eth/tracers"
+	"github.com/shudolab/core-geth/log"
 )
 
 // traceWriter is an vm.EVMLogger which also holds an inner logger/tracer.

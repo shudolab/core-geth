@@ -41,10 +41,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/shudolab/core-geth/accounts"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/event"
+	"github.com/shudolab/core-geth/log"
 	pcsc "github.com/gballet/go-libpcsclite"
 )
 

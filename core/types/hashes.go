@@ -17,9 +17,9 @@
 package types
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/crypto"
+	"github.com/shudolab/core-geth/log"
 )
 
 var (

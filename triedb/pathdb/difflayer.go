@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/trie/trienode"
-	"github.com/ethereum/go-ethereum/trie/triestate"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/trie/trienode"
+	"github.com/shudolab/core-geth/trie/triestate"
 )
 
 // diffLayer represents a collection of modifications made to the in-memory tries

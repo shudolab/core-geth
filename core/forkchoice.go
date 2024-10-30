@@ -24,11 +24,11 @@ import (
 	mrand "math/rand"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/common/math"
+	"github.com/shudolab/core-geth/consensus"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/log"
 )
 
 // ForkChoice is the fork chooser based on the highest total difficulty of the

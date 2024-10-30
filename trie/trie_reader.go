@@ -17,11 +17,11 @@
 package trie
 
 import (
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/trie/triestate"
-	"github.com/ethereum/go-ethereum/triedb/database"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/trie/triestate"
+	"github.com/shudolab/core-geth/triedb/database"
 )
 
 // trieReader is a wrapper of the underlying node reader. It's not safe

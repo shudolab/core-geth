@@ -19,7 +19,7 @@ package ctypes
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/shudolab/core-geth/common"
 )
 
 // This file holds the Configurator interfaces.

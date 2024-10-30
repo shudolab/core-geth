@@ -22,10 +22,10 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/params/vars"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/crypto"
+	"github.com/shudolab/core-geth/params/vars"
+	"github.com/shudolab/core-geth/rlp"
 )
 
 func TestEIP155Signing(t *testing.T) {

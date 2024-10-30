@@ -19,7 +19,7 @@ package core
 import (
 	"testing"
 
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/shudolab/core-geth/params"
 )
 
 func TestDefaultGenesisBlock(t *testing.T) {

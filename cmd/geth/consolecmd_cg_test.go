@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/shudolab/core-geth/params"
 )
 
 // TestConsoleCmdNetworkIdentities tests network identity variables at runtime for a geth instance.

@@ -25,11 +25,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/msgrate"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/eth/protocols/eth"
+	"github.com/shudolab/core-geth/event"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/p2p/msgrate"
 )
 
 const (

@@ -20,12 +20,12 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/eth/protocols/snap"
+	"github.com/shudolab/core-geth/eth/protocols/eth"
+	"github.com/shudolab/core-geth/eth/protocols/snap"
 )
 
 /* PTAL(meowsbits)
-https://github.com/ethereum/go-ethereum/pull/26804
+https://github.com/shudolab/core-geth/pull/26804
 Difficulty, Head, and ForkID are removed, citing (from the PR):
 
 	> Post-merge there is no more block broadcasts and announcements.

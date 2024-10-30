@@ -21,8 +21,8 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core/types"
 )
 
 var (

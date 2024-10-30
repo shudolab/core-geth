@@ -19,7 +19,7 @@ package ctypes
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/params/vars"
+	"github.com/shudolab/core-geth/params/vars"
 	"github.com/holiman/uint256"
 )
 

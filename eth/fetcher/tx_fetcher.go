@@ -25,13 +25,13 @@ import (
 	"sort"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/lru"
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/core/txpool"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/common/lru"
+	"github.com/shudolab/core-geth/common/mclock"
+	"github.com/shudolab/core-geth/core/txpool"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/metrics"
 )
 
 const (

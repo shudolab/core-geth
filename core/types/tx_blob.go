@@ -21,10 +21,10 @@ import (
 	"crypto/sha256"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto/kzg4844"
-	"github.com/ethereum/go-ethereum/params/vars"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/crypto/kzg4844"
+	"github.com/shudolab/core-geth/params/vars"
+	"github.com/shudolab/core-geth/rlp"
 	"github.com/holiman/uint256"
 )
 

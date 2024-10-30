@@ -34,12 +34,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/ethereum/go-ethereum/internal/reexec"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/shudolab/core-geth/internal/reexec"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/node"
+	"github.com/shudolab/core-geth/p2p"
+	"github.com/shudolab/core-geth/p2p/enode"
+	"github.com/shudolab/core-geth/rpc"
 	"github.com/gorilla/websocket"
 	"golang.org/x/exp/slog"
 )

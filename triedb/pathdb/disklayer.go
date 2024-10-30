@@ -22,12 +22,12 @@ import (
 	"sync"
 
 	"github.com/VictoriaMetrics/fastcache"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/trie/trienode"
-	"github.com/ethereum/go-ethereum/trie/triestate"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/core/rawdb"
+	"github.com/shudolab/core-geth/crypto"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/trie/trienode"
+	"github.com/shudolab/core-geth/trie/triestate"
 	"golang.org/x/crypto/sha3"
 )
 

@@ -7,12 +7,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/params/confp"
-	"github.com/ethereum/go-ethereum/params/types/coregeth"
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
-	"github.com/ethereum/go-ethereum/params/types/genesisT"
-	"github.com/ethereum/go-ethereum/params/types/goethereum"
+	"github.com/shudolab/core-geth/params"
+	"github.com/shudolab/core-geth/params/confp"
+	"github.com/shudolab/core-geth/params/types/coregeth"
+	"github.com/shudolab/core-geth/params/types/ctypes"
+	"github.com/shudolab/core-geth/params/types/genesisT"
+	"github.com/shudolab/core-geth/params/types/goethereum"
 	"gopkg.in/urfave/cli.v1"
 )
 

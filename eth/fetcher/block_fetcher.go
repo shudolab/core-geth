@@ -22,14 +22,14 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/prque"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/common/prque"
+	"github.com/shudolab/core-geth/consensus"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/eth/protocols/eth"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/metrics"
+	"github.com/shudolab/core-geth/trie"
 )
 
 // InsertChainEvent is posted by the handler when a propagated block is successfully imported.

@@ -28,9 +28,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
+	"github.com/shudolab/core-geth/crypto"
+	"github.com/shudolab/core-geth/p2p/enode"
+	"github.com/shudolab/core-geth/p2p/enr"
 	"golang.org/x/exp/slices"
 )
 

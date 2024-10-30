@@ -24,7 +24,7 @@ import (
 	"regexp"
 	"sort"
 
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
+	"github.com/shudolab/core-geth/params/types/ctypes"
 )
 
 var (

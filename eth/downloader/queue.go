@@ -26,13 +26,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/prque"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto/kzg4844"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/params/vars"
+	"github.com/shudolab/core-geth/common"
+	"github.com/shudolab/core-geth/common/prque"
+	"github.com/shudolab/core-geth/core/types"
+	"github.com/shudolab/core-geth/crypto/kzg4844"
+	"github.com/shudolab/core-geth/log"
+	"github.com/shudolab/core-geth/metrics"
+	"github.com/shudolab/core-geth/params/vars"
 )
 
 const (

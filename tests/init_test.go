@@ -32,8 +32,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/params/types/ctypes"
+	"github.com/shudolab/core-geth/core/vm"
+	"github.com/shudolab/core-geth/params/types/ctypes"
 )
 
 var (
