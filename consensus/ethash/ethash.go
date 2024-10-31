@@ -285,17 +285,105 @@ type cache struct {
 	once        sync.Once // Ensures the cache is generated only once
 }
 
+type Cache struct {
+	epoch       uint64
+	epochLength uint64
+	dump        *os.File
+	mmap        mmap.MMap
+	cache       []uint32
+	once        sync.Once
+}
+
 // newCache creates a new ethash verification cache.
 func newCache(epoch uint64, epochLength uint64) *cache {
 	return &cache{epoch: epoch, epochLength: epochLength}
 }
 
-func NewCache(epoch uint64, epochLength uint64) *cache {
-	return newCache(epoch, epochLength)
+func NewCache(epoch uint64, epochLength uint64) *Cache {
+	return &Cache{epoch: epoch, epochLength: epochLength}
 }
 
 // generate ensures that the cache content is generated before use.
 func (c *cache) generate(dir string, limit int, lock bool, test bool) {
+	c.once.Do(func() {
+		size := cacheSize(c.epoch)
+		seed := seedHash(c.epoch, c.epochLength)
+		if test {
+			size = 1024
+		}
+		// If we don't store anything on disk, generate and return.
+		if dir == "" {
+			c.cache = make([]uint32, size/4)
+			generateCache(c.cache, c.epoch, c.epochLength, seed)
+			return
+		}
+		// Disk storage is needed, this will get fancy
+		var endian string
+		if !isLittleEndian() {
+			endian = ".be"
+		}
+		// The file path naming scheme was changed to include epoch values in the filename,
+		// which enables a filepath glob with scan to identify out-of-bounds caches and remove them.
+		// The legacy path declaration is provided below as a comment for reference.
+		//
+		// path := filepath.Join(dir, fmt.Sprintf("cache-R%d-%x%s", algorithmRevision, seed[:8], endian))                 // LEGACY
+		path := filepath.Join(dir, fmt.Sprintf("cache-R%d-%d-%x%s", algorithmRevision, c.epoch, seed[:8], endian)) // CURRENT
+		logger := log.New("epoch", c.epoch, "epochLength", c.epochLength)
+
+		// We're about to mmap the file, ensure that the mapping is cleaned up when the
+		// cache becomes unused.
+		runtime.SetFinalizer(c, (*cache).finalizer)
+
+		// Try to load the file from disk and memory map it
+		var err error
+		c.dump, c.mmap, c.cache, err = memoryMap(path, lock)
+		if err == nil {
+			logger.Debug("Loaded old ethash cache from disk")
+			return
+		}
+		logger.Debug("Failed to load old ethash cache", "err", err)
+
+		// No usable previous cache available, create a new cache file to fill
+		c.dump, c.mmap, c.cache, err = memoryMapAndGenerate(path, size, lock, func(buffer []uint32) { generateCache(buffer, c.epoch, c.epochLength, seed) })
+		if err != nil {
+			logger.Error("Failed to generate mapped ethash cache", "err", err)
+
+			c.cache = make([]uint32, size/4)
+			generateCache(c.cache, c.epoch, c.epochLength, seed)
+		}
+
+		// Iterate over all cache file instances, deleting any out of bounds (where epoch is below lower limit, or above upper limit).
+		matches, _ := filepath.Glob(filepath.Join(dir, fmt.Sprintf("cache-R%d*", algorithmRevision)))
+		for _, file := range matches {
+			var ar int   // algorithm revision
+			var e uint64 // epoch
+			var s string // seed
+			if _, err := fmt.Sscanf(filepath.Base(file), "cache-R%d-%d-%s"+endian, &ar, &e, &s); err != nil {
+				// There is an unrecognized file in this directory.
+				// See if the name matches the expected pattern of the legacy naming scheme.
+				if _, err := fmt.Sscanf(filepath.Base(file), "cache-R%d-%s"+endian, &ar, &s); err == nil {
+					// This file matches the previous generation naming pattern (sans epoch).
+					if err := os.Remove(file); err != nil {
+						logger.Error("Failed to remove legacy ethash cache file", "file", file, "err", err)
+					} else {
+						logger.Warn("Deleted legacy ethash cache file", "path", file)
+					}
+				}
+				// Else the file is unrecognized (unknown name format), leave it alone.
+				continue
+			}
+			if e <= c.epoch-uint64(limit) || e > c.epoch+1 {
+				if err := os.Remove(file); err == nil {
+					logger.Debug("Deleted ethash cache file", "target.epoch", e, "file", file)
+				} else {
+					logger.Error("Failed to delete ethash cache file", "target.epoch", e, "file", file, "err", err)
+				}
+			}
+		}
+	})
+}
+
+func (c *Cache) Generate(dir string, limit int, lock bool, test bool) {
 	c.once.Do(func() {
 		size := cacheSize(c.epoch)
 		seed := seedHash(c.epoch, c.epochLength)
@@ -730,6 +818,15 @@ func (ethash *Ethash) cache(block uint64) *cache {
 		go future.generate(ethash.config.CacheDir, ethash.config.CachesOnDisk, ethash.config.CachesLockMmap, ethash.config.PowMode == ModeTest)
 	}
 	return current
+}
+
+func (ethash *Ethash) Cache(block uint64) *Cache {
+	internalCache := ethash.cache(block)
+	return &Cache{
+		epoch:       internalCache.epoch,
+		epochLength: internalCache.epochLength,
+		cache:       internalCache.cache,
+	}
 }
 
 // dataset tries to retrieve a mining dataset for the specified block number
