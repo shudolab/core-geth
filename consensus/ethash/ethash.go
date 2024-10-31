@@ -829,6 +829,10 @@ func (ethash *Ethash) Cache(block uint64) *Cache {
 	}
 }
 
+func (c *Cache) GetCache() []uint32 {
+	return c.cache
+}
+
 // dataset tries to retrieve a mining dataset for the specified block number
 // by first checking against a list of in-memory datasets, then against DAGs
 // stored on disk, and finally generating one if none can be found.
