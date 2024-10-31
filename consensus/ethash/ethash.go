@@ -290,6 +290,10 @@ func newCache(epoch uint64, epochLength uint64) *cache {
 	return &cache{epoch: epoch, epochLength: epochLength}
 }
 
+func NewCache(epoch uint64, epochLength uint64) *cache {
+	return newCache(epoch, epochLength)
+}
+
 // generate ensures that the cache content is generated before use.
 func (c *cache) generate(dir string, limit int, lock bool, test bool) {
 	c.once.Do(func() {
