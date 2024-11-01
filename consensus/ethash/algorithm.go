@@ -433,6 +433,14 @@ func hashimotoFull(dataset []uint32, hash []byte, nonce uint64) ([]byte, []byte)
 	return hashimoto(hash, nonce, uint64(len(dataset))*4, lookup)
 }
 
+func HashimotoFull(dataset []uint32, hash []byte, nonce uint64) ([]byte, []byte) {
+	lookup := func(index uint32) []uint32 {
+		offset := index * hashWords
+		return dataset[offset : offset+hashWords]
+	}
+	return hashimoto(hash, nonce, uint64(len(dataset))*4, lookup)
+}
+
 // datasetSizes is a lookup table for the ethash dataset size for the first 2048
 // epochs (i.e. 61440000 blocks).
 var datasetSizes = [maxEpoch]uint64{
